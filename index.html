@@ -1,136 +1,128 @@
-      </p>
-    </section>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy Policy for the Handheld Accountant iOS application.">
+  <title>Privacy Policy | Handheld Accountant</title>
+  <style>
+    :root {
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #5d6678;
+      --accent: #d96b13;
+      --accent-soft: #fff2e7;
+      --border: #e3e6eb;
+      --link: #075db7;
+      --shadow: 0 16px 45px rgba(24, 32, 51, 0.08);
+    }
 
-    <section id="advertising">
-      <h2>5. Advertising choices, consent, and tracking</h2>
-      <p>
-        Where required, the App or Google’s User Messaging Platform may ask for
-        advertising consent and provide privacy choices.
-      </p>
-      <p>
-        On supported Apple devices, you may also be asked whether you allow the App
-        to track your activity across other companies’ apps and websites through
-        Apple’s App Tracking Transparency prompt. You may decline this request. If
-        you decline, the App may continue to display advertisements, but the
-        advertising identifier will not be available for tracking or personalized
-        advertising through that permission.
-      </p>
-      <p>
-        You can review or change Apple tracking permission under
-        <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.
-      </p>
-      <p>
-        Where the App displays a “Privacy Choices” option, you may use it to review
-        available advertising privacy choices. You may also control certain
-        personalized-ad settings through your Apple device or Google account, where available.
-      </p>
-      <p>Purchasing the Full Version disables advertisements within the App.</p>
-    </section>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #101318;
+        --surface: #181c23;
+        --text: #f1f4f8;
+        --muted: #b5bdca;
+        --accent: #ff9a45;
+        --accent-soft: #352417;
+        --border: #303641;
+        --link: #79b8ff;
+        --shadow: none;
+      }
+    }
 
-    <section id="retention">
-      <h2>6. Data retention and deletion</h2>
-      <p>
-        Local profile and receipt information remains on your device until you delete
-        individual receipts, delete a profile, or remove the App. Deleting a profile
-        is intended to delete its associated receipt records and locally stored
-        receipt images. Removing the App generally removes its locally stored data,
-        subject to Apple backup and restoration behavior.
-      </p>
-      <p>
-        Temporary files created for CSV or PDF sharing may remain temporarily in the
-        App’s storage or in destinations selected by you, the operating system, or receiving applications.
-      </p>
-      <p>
-        Advertising and purchase providers retain information according to their own
-        policies and legal obligations.
-      </p>
-      <p>
-        Because Gallop &amp; Thrive does not currently maintain user accounts or a
-        server-side copy of your receipt database, we generally cannot access,
-        recover, or remotely delete receipt information stored only on your device.
-      </p>
-    </section>
+    * {
+      box-sizing: border-box;
+    }
 
-    <section id="security">
-      <h2>7. Security</h2>
-      <p>
-        We use the protections provided by iOS and take reasonable measures designed
-        to protect information handled by the App. However, no device, storage
-        system, or method of electronic processing is completely secure. You are
-        responsible for maintaining control of your device, passcode, backups,
-        exported files, and destinations to which you share information.
-      </p>
-    </section>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <section id="children">
-      <h2>8. Children’s privacy</h2>
-      <p>
-        The App is intended as a general receipt-organization and expense-tracking
-        tool and is not directed to children. We do not knowingly request that
-        children provide personal information to Gallop &amp; Thrive through an
-        account or server operated by us. If you believe a child has provided
-        personal information to us directly, please contact us so that we can
-        investigate and take appropriate action.
-      </p>
-    </section>
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
 
-    <section id="international">
-      <h2>9. International processing</h2>
-      <p>
-        Google, Apple, and their service providers may process information in
-        countries other than the country where you live. Those countries may have
-        different data-protection laws. Their respective privacy policies describe
-        the safeguards they apply to international processing.
-      </p>
-    </section>
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(28px, 6vw, 72px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
 
-    <section id="rights">
-      <h2>10. Your rights and choices</h2>
-      <p>
-        Depending on where you live, you may have rights regarding personal
-        information, including rights to request access, correction, deletion,
-        restriction, objection, or portability, and to withdraw consent where
-        processing relies on consent.
-      </p>
-      <p>
-        For receipt and profile information stored only on your device, you can
-        exercise control directly in the App by editing or deleting records and
-        profiles, or by deleting the App. For information processed by Apple or
-        Google, use the privacy controls and request mechanisms provided by those companies.
-      </p>
-      <p>
-        You may contact us about a privacy request using the details below. We may
-        need to verify your request and may be unable to retrieve information that
-        is stored only on your device.
-      </p>
-    </section>
+    header {
+      padding-bottom: 28px;
+      margin-bottom: 34px;
+      border-bottom: 1px solid var(--border);
+    }
 
-    <section id="changes">
-      <h2>11. Changes to this Privacy Policy</h2>
-      <p>
-        We may update this Privacy Policy when the App, our practices, third-party
-        services, or legal requirements change. We will update the “Last updated”
-        date and, where appropriate, provide additional notice. Your continued use
-        of the App after an update means that the updated policy applies to your
-        subsequent use.
-      </p>
-    </section>
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
 
-    <section id="contact">
-      <h2>12. Contact us</h2>
-      <p>For privacy questions or requests, contact:</p>
-      <address>
-        <strong>Gallop &amp; Thrive Ltd</strong><br>
-        New Zealand<br>
-        Email: <span class="replace">INSERT PRIVACY OR SUPPORT EMAIL</span><br>
-        Postal address: <span class="replace">INSERT BUSINESS POSTAL ADDRESS</span><br>
-        Website: <span class="replace">INSERT WEBSITE URL</span>
-      </address>
-    </section>
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
 
-    <footer>
-      © 2026 Gallop &amp; Thrive Ltd. All rights reserved.
-    </footer>
-  </main>
-</body>
-</html>
+    .dates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .summary {
+      margin: 0 0 34px;
+      padding: 20px 22px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+    }
+
+    nav {
+      margin: 0 0 42px;
+      padding: 22px 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    nav h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    nav ol {
+      columns: 2;
+      column-gap: 42px;
+      margin-bottom: 0;
+      padding-left: 24px;
+    }
+
+    nav li {
+      break-inside: avoid;
+      margin: 5px 0;
+    }
+
+    section {
+      scroll-margin-top: 20px;
+      margin: 0 0 42px;
