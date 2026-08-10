@@ -1,3 +1,67 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Support and frequently asked questions for the Handheld Accountant iOS app.">
+  <title>Support | Handheld Accountant</title>
+  <style>
+    :root {
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #5d6678;
+      --accent: #d96b13;
+      --accent-soft: #fff2e7;
+      --border: #e3e6eb;
+      --link: #075db7;
+      --shadow: 0 16px 45px rgba(24, 32, 51, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #101318;
+        --surface: #181c23;
+        --text: #f1f4f8;
+        --muted: #b5bdca;
+        --accent: #ff9a45;
+        --accent-soft: #352417;
+        --border: #303641;
+        --link: #79b8ff;
+        --shadow: none;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(28px, 6vw, 64px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    header {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
       font-size: 0.82rem;
       font-weight: 750;
       letter-spacing: 0.08em;
@@ -123,4 +187,4 @@
     </footer>
   </main>
 </body>
-</html>
+</html
