@@ -1,398 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<title>Privacy Policy | Handheld Accountant</title>
-<meta name="description" content="Privacy policy for the updated Handheld Accountant app.">
-<style>
-    :root {
-      --background: #f7f8fa;
-      --surface: #ffffff;
-      --text: #172033;
-      --muted: #5d6678;
-      --accent: #d96b13;
-      --accent-soft: #fff2e7;
-      --border: #e3e6eb;
-      --link: #075db7;
-      --shadow: 0 16px 45px rgba(24, 32, 51, 0.08);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --background: #101318;
-        --surface: #181c23;
-        --text: #f1f4f8;
-        --muted: #b5bdca;
-        --accent: #ff9a45;
-        --accent-soft: #352417;
-        --border: #303641;
-        --link: #79b8ff;
-        --shadow: none;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .page {
-      width: min(920px, calc(100% - 32px));
-      margin: 40px auto;
-      padding: clamp(28px, 6vw, 72px);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    header {
-      padding-bottom: 28px;
-      margin-bottom: 34px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .eyebrow {
-      margin: 0 0 8px;
-      color: var(--accent);
-      font-size: 0.82rem;
-      font-weight: 750;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 7vw, 3.5rem);
-      line-height: 1.1;
-      letter-spacing: -0.035em;
-    }
-
-    .dates {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 22px;
-      margin: 18px 0 0;
-      color: var(--muted);
-      font-size: 0.93rem;
-    }
-
-    .summary {
-      margin: 0 0 34px;
-      padding: 20px 22px;
-      background: var(--accent-soft);
-      border-left: 4px solid var(--accent);
-      border-radius: 12px;
-    }
-
-    nav {
-      margin: 0 0 42px;
-      padding: 22px 24px;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-    }
-
-    nav h2 {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
-
-    nav ol {
-      columns: 2;
-      column-gap: 42px;
-      margin-bottom: 0;
-      padding-left: 24px;
-    }
-
-    nav li {
-      break-inside: avoid;
-      margin: 5px 0;
-    }
-
-    section {
-      scroll-margin-top: 20px;
-      margin: 0 0 42px;
-    }
-
-    h2 {
-      margin: 0 0 14px;
-      font-size: clamp(1.35rem, 3vw, 1.7rem);
-      line-height: 1.3;
-      letter-spacing: -0.015em;
-    }
-
-    h3 {
-      margin: 26px 0 8px;
-      font-size: 1.08rem;
-    }
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    ul {
-      margin: 8px 0 18px;
-      padding-left: 26px;
-    }
-
-    li {
-      margin: 6px 0;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-
-    address {
-      padding: 20px 22px;
-      background: var(--background);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      font-style: normal;
-    }
-
-    .replace {
-      color: #b42318;
-      font-weight: 700;
-      background: #fff0ed;
-      border-radius: 5px;
-      padding: 1px 5px;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .replace {
-        color: #ffb4a8;
-        background: #491d18;
-      }
-    }
-
-    footer {
-      padding-top: 26px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
-      text-align: center;
-    }
-
-    @media (max-width: 640px) {
-      .page {
-        width: 100%;
-        margin: 0;
-        border: 0;
-        border-radius: 0;
-      }
-
-      nav ol {
-        columns: 1;
-      }
-    }
-
-    @media print {
-      body {
-        background: #fff;
-        color: #000;
-        font-size: 11pt;
-      }
-
-      .page {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        box-shadow: none;
-      }
-
-      nav {
-        display: none;
-      }
-
-      a {
-        color: inherit;
-      }
-    }
-  </style>
-</head>
-<body>
-<main class="page">
-<h1>Privacy Policy for Handheld Accountant</h1>
-
-<p><strong>Version scope:</strong> This revision describes Handheld Accountant 2.0, planned for release on 25 November 2026. Some screens and features differ in older versions. Earlier releases may have shown app-open advertisements or requested tracking permission; existing system permissions remain controlled in your device settings.</p>
-
-<p><strong>Original policy effective date:</strong> 25 July 2026<br>
-<strong>This revision effective date:</strong> 24 November 2026<br>
-<strong>Last updated:</strong> 24 November 2026</p>
-
-<p>Gallop &amp; Thrive Limited, operating as Gallop &amp; Thrive (“Gallop &amp; Thrive”, “we”, “us”, or “our”), provides the Handheld Accountant mobile application (the “App”). This Privacy Policy explains what information is processed when you use the App, why it is processed, how it is stored and shared, and the choices available to you.</p>
-
-<p>This policy describes the updated App with profile-based receipt organisation, warranty records, and export preparation. It explains our practices; it does not replace any consent required by law or an operating-system permission.</p>
-
-<h2>1. Information processed by the App</h2>
-
-<h3>Profile and receipt information</h3>
-
-<p>The App lets you create profiles and record information from receipts. Depending on how you use the App, this information may include:</p>
-
-<ul><li>profile names you choose and optional company names; a profile name need not be your legal name;</li><li>tax labels, tax rates, currency preferences, and other profile settings;</li><li>receipt images;</li><li>merchant or trading names and legal entity names;</li><li>purchase dates, totals, currencies, tax labels, tax rates, estimated tax and net amounts, and payment methods;</li><li>built-in or custom categories, Business/Personal designations, and notes;</li><li>receipt numbers, purchase locations, supplier tax ID types and numbers, and associated country codes;</li><li>optional warranty expiry dates and per-profile reminder preferences;</li><li>app-generated record, profile, and category identifiers, archive status, and the last selected profile; and</li><li>edits you make to scanned or imported receipt information.</li></ul>
-
-<p>This information is provided by you or extracted from receipt images using Apple’s on-device text-recognition technologies.</p>
-
-<h3>Camera and photo library</h3>
-
-<p>With your permission, the App may access:</p>
-
-<ul><li>the camera, so you can scan a receipt; and</li><li>photos that you select from your photo library, so you can import an existing receipt image.</li></ul>
-
-<p>The camera is used when you start a scan and allow camera access. Photo import uses Apple's selection interface to receive images you choose; importing a selected image does not require unrestricted access to your entire photo library. You can manage available permissions in your device Settings.</p>
-
-<h3>Warranty notifications</h3>
-
-<p>Warranty reminders are optional and off by default for each profile. If you enable them, the App requests notification permission and schedules local notifications using the warranty dates you record. The notification content may include the profile name, merchant name, and recorded expiry date; notification metadata includes the profile and receipt identifiers needed to open the matching record. These reminders are scheduled on your device, not sent from a notification server operated by us.</p>
-
-<p>Notification previews may be visible on your Lock Screen or other notification surfaces, depending on your Apple settings. You can disable reminders for a profile in the App and change notification permission or preview visibility in your device Settings. Warranty records remain usable without notification permission.</p>
-
-<h3>Purchase information</h3>
-
-<p>If you purchase or restore the Full Version, Apple processes the transaction through the App Store. The App receives information necessary to confirm whether the Full Version entitlement is active. We do not receive or store your full payment-card or banking details.</p>
-
-<h3>Advertising and device information</h3>
-
-<p>The free version uses Google Mobile Ads for banner advertisements. App-open advertisements are disabled in the updated App covered by this revision. Google and participating advertising partners may process advertising-related information separately from your locally stored receipt records, including:</p>
-
-<ul><li>device and advertising identifiers, where permitted;</li><li>IP address;</li><li>general device information, operating-system version, language, and approximate location inferred from IP address;</li><li>advertisement impressions, interactions, clicks, crash diagnostics, and performance information;</li><li>consent and privacy choices; and</li><li>information used for fraud prevention, security, frequency capping, advertising measurement, and, where permitted, personalized advertising.</li></ul>
-
-<p>The information processed depends on the SDK and advertising configuration, applicable privacy choices, and device permissions. We do not supply your receipt images, receipt contents, profile names, supplier tax IDs, or notes to Google as advertising targeting information.</p>
-
-<h2>2. How information is used</h2>
-
-<p>Information is processed to:</p>
-
-<ul><li>scan receipts and recognize receipt text;</li><li>create and manage profiles and receipt records;</li><li>display, search, filter, edit, categorise, archive, delete, and export receipts;</li><li>calculate receipt-level estimates and currency-separated summaries, and suggest categories using previous receipts stored on your device;</li><li>maintain warranty records and schedule optional local reminders;</li><li>prepare and review selected records and create CSV, financial-summary PDF, or receipt-image PDF exports when requested;</li><li>provide and restore the Full Version;</li><li>remove advertising when the Full Version is active;</li><li>display and measure advertisements in the free version;</li><li>maintain security, prevent fraud, diagnose errors, and improve reliability; and</li><li>comply with legal obligations and enforce applicable terms.</li></ul>
-
-<p>Receipt information is not used by Gallop &amp; Thrive to make financial, accounting, tax, credit, insurance, employment, or other automated eligibility decisions.</p>
-
-<h2>3. On-device processing and storage</h2>
-
-<p>Receipt text recognition is performed on the device using Apple Vision technologies. Based on the current version of the App, Gallop &amp; Thrive does not upload your receipt images or extracted receipt contents to a Gallop &amp; Thrive server for text recognition.</p>
-
-<p>Profiles, receipt records, saved receipt images, thumbnails, categories, preferences, and cached Full Version status are stored locally using Apple storage technologies. Category suggestions use the existing receipts on your device; they do not require a remote AI service. The App does not currently provide its own cloud receipt database or account-based cloud synchronisation. Apple still verifies purchases and advertising services may communicate over the network as described in this policy. This locally stored information may also be included in device backups depending on your Apple device and backup settings.</p>
-
-<p>If a future version introduces cloud synchronization, remote receipt processing, analytics, or another server-based feature, this Privacy Policy will be updated before or when that processing begins.</p>
-
-<h2>4. Sharing and disclosure</h2>
-
-<p>We do not sell your receipt images, extracted receipt contents, or profile information.</p>
-
-<p>Information may be shared or processed in the following circumstances:</p>
-
-<h3>User-directed sharing</h3>
-
-<p>When you prepare an export, the App creates files locally from the records selected in the current profile. Exported information may include profile and company names, merchant and legal entity names, dates, monetary and tax information, categories, Business/Personal status, notes, receipt numbers, purchase locations, supplier tax identifiers, warranty dates, archive status, and record or profile identifiers. CSV exports also include the selection scope and export timestamp. The receipt PDF archive can contain original receipt images, including any personal details visible in those images.</p>
-
-<p>When you save or share a file, the destination you select through Apple's sharing interface determines who receives or stores it. This can include a Files location, email recipient, accountant, third-party app, or cloud storage service. Review the selected records, images, and destination before sharing. The recipient's privacy practices apply. Preparing an export does not automatically send it to us or an accountant.</p>
-
-<p>Archiving a receipt hides it from the active list but does not delete its record or images. Optional archiving after sharing is a separate action; copies already saved or shared are not recalled by archiving or deleting the original.</p>
-
-<h3>Google advertising services</h3>
-
-<p>Google Mobile Ads and participating advertising partners may process advertising, device, consent, diagnostic, and interaction information as described above. Google's handling of advertising information is described in its own policies, including:</p>
-
-<ul><li>Google Privacy Policy: https://policies.google.com/privacy</li><li>How Google uses information from sites or apps that use its services: https://policies.google.com/technologies/partner-sites</li></ul>
-
-<h3>Apple services</h3>
-
-<p>Apple processes App Store purchases, restores, TestFlight distribution, operating-system permissions, and related information under Apple’s privacy policies:</p>
-
-<ul><li>Apple Privacy Policy: https://www.apple.com/legal/privacy/</li></ul>
-
-<h3>Information you send to support</h3>
-
-<p>If you email us, we receive your email address, message, and any attachments you choose to include. Send receipt images or other personal information only if needed for your request. We use support correspondence to respond, troubleshoot, and handle privacy requests, and retain it only as reasonably needed for those purposes and applicable legal obligations.</p>
-
-<h3>Legal and safety reasons</h3>
-
-<p>For information that we actually hold, such as support correspondence, we may disclose information if reasonably necessary to comply with law, legal process, or a valid governmental request; protect the rights, safety, and security of users or others; investigate fraud or abuse; or establish, exercise, or defend legal claims.</p>
-
-<h3>Business changes</h3>
-
-<p>If Gallop &amp; Thrive is involved in a merger, acquisition, financing, reorganization, or sale of assets, information associated with the App may be transferred subject to appropriate confidentiality and privacy protections.</p>
-
-<h2>5. Advertising choices, consent, and tracking</h2>
-
-<p>Google's User Messaging Platform manages available advertising consent and privacy messages where required. Ad requests are gated on the consent SDK permitting them. Permission to display an ad is not, by itself, permission for cross-app tracking.</p>
-
-<p>The updated App does not initiate an App Tracking Transparency (ATT) permission prompt. Any existing system tracking permission remains controlled by iOS or iPadOS. Advertising consent does not override an ATT refusal or restriction; access to Apple's advertising identifier requires the relevant system permission. Advertisements may still be available without that permission. Disabling ATT does not mean all advertising-related network processing stops.</p>
-
-<p>You can review or change Apple tracking permission at:</p>
-
-<p><strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong></p>
-
-<p>Where the App displays a “Privacy and cookie settings” option, you may use it to review available advertising privacy choices. You may also control certain personalized-ad settings through your Apple device or Google account, where available.</p>
-
-<p>When the Full Version entitlement is recognised, the App disables its advertisements. This does not erase information previously processed by advertising providers.</p>
-
-<h2>6. Data retention and deletion</h2>
-
-<p>Local profile and receipt information remains on your device until you delete individual receipts, delete a profile, or remove the App. Deleting a profile is intended to delete its associated receipt records and locally stored receipt images. Removing the App generally removes its locally stored data, subject to Apple backup and restoration behavior.</p>
-
-<p>Temporary files created for CSV or PDF sharing may remain in the App's temporary storage until cleaned up by the operating system or removed with the App. Deleting a receipt does not necessarily remove an export already created from it. Files saved to Files, email, cloud storage, or receiving apps remain subject to those destinations' retention and deletion controls.</p>
-
-<p>Archiving is not deletion. To remove a saved or shared copy, delete it separately from its destination. Turning off a profile's warranty reminders removes its pending reminders when the App refreshes scheduling; already delivered notifications may need to be cleared through the system interface.</p>
-
-<p>Advertising and purchase providers retain information according to their own policies and legal obligations.</p>
-
-<p>Because Gallop &amp; Thrive does not currently maintain user accounts or a server-side copy of your receipt database, we cannot remotely retrieve, restore, or delete information stored only on your device. Device backups and previously shared copies may retain information after its removal from the App. CSV and PDF files are useful records, but are not a complete backup that can restore the App's database.</p>
-
-<h2>7. Security</h2>
-
-<p>We use the protections provided by iOS and iPadOS and take reasonable measures designed to protect information handled by the App. However, no device, storage system, or method of electronic processing is completely secure. You are responsible for maintaining control of your device, passcode, backups, exported files, and destinations to which you share information.</p>
-
-<h2>8. Children’s privacy</h2>
-
-<p>The App is intended as a general receipt-organization and expense-tracking tool and is not directed to children. We do not knowingly request that children provide personal information to Gallop &amp; Thrive through an account or server operated by us. If you believe a child has provided personal information to us directly, please contact us so that we can investigate and take appropriate action.</p>
-
-<h2>9. International processing</h2>
-
-<p>Google, Apple, and their service providers may process information in countries other than the country where you live. Those countries may have different data-protection laws. Their respective privacy policies describe the safeguards they apply to international processing.</p>
-
-<h2>10. Your rights and choices</h2>
-
-<p>Depending on where you live, you may have rights regarding personal information, including rights to request access, correction, deletion, restriction, objection, or portability, and to withdraw consent where processing relies on consent.</p>
-
-<p>For receipt and profile information stored only on your device, you can exercise control directly in the App by editing or deleting records and profiles, or by deleting the App. For information processed by Apple or Google, use the privacy controls and request mechanisms provided by those companies.</p>
-
-<p>You may contact us about a privacy request using the details below. We may need to verify your request and may be unable to retrieve information that is stored only on your device.</p>
-
-<h2>11. Changes to this Privacy Policy</h2>
-
-<p>We may update this Privacy Policy when the App, our practices, third-party services, or legal requirements change. We will update the “Last updated” date and, where appropriate, provide additional notice. Where a change requires consent, we will seek that consent before the relevant processing. A policy update alone does not grant an operating-system permission.</p>
-
-<h2>12. Contact us</h2>
-
-<p>For privacy questions or requests, contact:</p>
-
-<p><strong>App operator:</strong> Gallop &amp; Thrive Limited<br>
-<strong>Trading name:</strong> Gallop &amp; Thrive<br>
-<strong>Country:</strong> New Zealand<br>
-<strong>Email:</strong> <a href="mailto:gallopnthrive@gmail.com">gallopnthrive@gmail.com</a><br>
-<strong>Postal address:</strong> PO Box 28190, Remuera, Auckland 1541<br>
-<strong>Website:</strong> <a href="https://gallopnthrive-web.github.io">gallopnthrive-web.github.io</a></p>
-<footer>© 2026 Gallop &amp; Thrive Limited.</footer>
+<meta charset="utf-8"/>
+<title>Handheld Accountant — Privacy Policy</title>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="How Gallop &amp; Thrive Limited handles information in Handheld Accountant." name="description"/><meta content="#186C4A" name="theme-color"/><meta content="website" property="og:type"/><meta content="Handheld Accountant — Privacy Policy" property="og:title"/><meta content="How Gallop &amp; Thrive Limited handles information in Handheld Accountant." property="og:description"/><meta content="https://gallopnthrive-web.github.io/Handheld-Accountants/" property="og:url"/><meta content="https://gallopnthrive-web.github.io/assets/og-image.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="summary_large_image" name="twitter:card"/><link href="/css/site.css" rel="stylesheet"/><link href="/assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/assets/apple-touch-icon.png" rel="apple-touch-icon"/><link href="https://gallopnthrive-web.github.io/Handheld-Accountants/" rel="canonical"/></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+
+
+<div class="design-117">
+<!-- Header -->
+<header class="site-header design-004">
+<div class="design-118">
+<a class="design-006" href="/">
+<span class="design-007"><img alt="" class="design-008" src="/assets/accountant-character-96.png"/></span>
+<span class="design-009"><span class="design-010">Handheld Accountant</span><span class="design-011">by Gallop &amp; Thrive</span></span>
+</a>
+<nav aria-label="Main" class="design-012">
+<a class="nav-link design-013" href="/#features">Features</a>
+<a class="nav-link design-013" href="/#workflow">How it works</a>
+<a class="nav-link design-013" href="/Handheld-Accountants/support.html">Support</a>
+<a aria-current="page" class="nav-link design-092" href="/Handheld-Accountants/">Privacy</a>
+<a class="nav-link design-014" href="https://apps.apple.com/app/id6785436951">Get the app</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<!-- Legal hero -->
+<section class="design-119">
+<div class="design-120">
+<p class="section-label design-020">Legal</p>
+<h1 class="design-121">Privacy Policy</h1>
+<p class="design-122">What data the Handheld Accountant app handles, why, how it is stored and shared, and the choices you have.</p>
+<div class="design-123">
+<span class="design-124">Effective 25 July 2026</span>
+<span class="design-125">Last updated 24 November 2026</span>
+</div>
+</div>
+</section>
+<!-- At a glance -->
+<section aria-label="At a glance" class="design-126">
+<div class="design-127">
+<div class="design-128"><strong class="design-129">Stays on your device</strong><span class="design-130">Text recognition and storage happen locally. No company server upload in the current version.</span></div>
+<div class="design-128"><strong class="design-129">Never sold</strong><span class="design-130">We don't sell your data. It is shared only where you choose or as described below.</span></div>
+<div class="design-128"><strong class="design-129">Ads in the free version</strong><span class="design-130">Google may process device, IP and ad-interaction data. You can change your ad choices.</span></div>
+</div>
+</section>
+<!-- Body: TOC + content -->
+<div class="design-131">
+<nav aria-label="On this page" class="design-132">
+<p class="design-133">ON THIS PAGE</p>
+<ol class="design-134"><li><a href="#p1">Information processed by the App</a></li><li><a href="#p2">How information is used</a></li><li><a href="#p3">On-device processing and storage</a></li><li><a href="#p4">Sharing and disclosure</a></li><li><a href="#p5">Advertising choices, consent, and tracking</a></li><li><a href="#p6">Data retention and deletion</a></li><li><a href="#p7">Security</a></li><li><a href="#p8">Children’s privacy</a></li><li><a href="#p9">International processing</a></li><li><a href="#p10">Your rights and choices</a></li><li><a href="#p11">Changes to this Privacy Policy</a></li><li><a href="#p12">Contact us</a></li></ol>
+</nav>
+<article class="legal-content design-135">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="policy-introduction"><p><strong>Version scope:</strong> This revision describes Handheld Accountant 2.0, planned for release on 25 November 2026. Some screens and features differ in older versions. Earlier releases may have shown app-open advertisements or requested tracking permission; existing system permissions remain controlled in your device settings.</p><p><strong>Original policy effective date:</strong> 25 July 2026<br/>
+<strong>This revision effective date:</strong> 24 November 2026<br/>
+<strong>Last updated:</strong> 24 November 2026</p><p>Gallop &amp; Thrive Limited, operating as Gallop &amp; Thrive (“Gallop &amp; Thrive”, “we”, “us”, or “our”), provides the Handheld Accountant mobile application (the “App”). This Privacy Policy explains what information is processed when you use the App, why it is processed, how it is stored and shared, and the choices available to you.</p><p>This policy describes the updated App with profile-based receipt organisation, warranty records, and export preparation. It explains our practices; it does not replace any consent required by law or an operating-system permission.</p></div><section class="legal-section" id="p1"><h2>1. Information processed by the App</h2><h3>Profile and receipt information</h3><p>The App lets you create profiles and record information from receipts. Depending on how you use the App, this information may include:</p><ul><li>profile names you choose and optional company names; a profile name need not be your legal name;</li><li>tax labels, tax rates, currency preferences, and other profile settings;</li><li>receipt images;</li><li>merchant or trading names and legal entity names;</li><li>purchase dates, totals, currencies, tax labels, tax rates, estimated tax and net amounts, and payment methods;</li><li>built-in or custom categories, Business/Personal designations, and notes;</li><li>receipt numbers, purchase locations, supplier tax ID types and numbers, and associated country codes;</li><li>optional warranty expiry dates and per-profile reminder preferences;</li><li>app-generated record, profile, and category identifiers, archive status, and the last selected profile; and</li><li>edits you make to scanned or imported receipt information.</li></ul><p>This information is provided by you or extracted from receipt images using Apple’s on-device text-recognition technologies.</p><h3>Camera and photo library</h3><p>With your permission, the App may access:</p><ul><li>the camera, so you can scan a receipt; and</li><li>photos that you select from your photo library, so you can import an existing receipt image.</li></ul><p>The camera is used when you start a scan and allow camera access. Photo import uses Apple's selection interface to receive images you choose; importing a selected image does not require unrestricted access to your entire photo library. You can manage available permissions in your device Settings.</p><h3>Warranty notifications</h3><p>Warranty reminders are optional and off by default for each profile. If you enable them, the App requests notification permission and schedules local notifications using the warranty dates you record. The notification content may include the profile name, merchant name, and recorded expiry date; notification metadata includes the profile and receipt identifiers needed to open the matching record. These reminders are scheduled on your device, not sent from a notification server operated by us.</p><p>Notification previews may be visible on your Lock Screen or other notification surfaces, depending on your Apple settings. You can disable reminders for a profile in the App and change notification permission or preview visibility in your device Settings. Warranty records remain usable without notification permission.</p><h3>Purchase information</h3><p>If you purchase or restore the Full Version, Apple processes the transaction through the App Store. The App receives information necessary to confirm whether the Full Version entitlement is active. We do not receive or store your full payment-card or banking details.</p><h3>Advertising and device information</h3><p>The free version uses Google Mobile Ads for banner advertisements. App-open advertisements are disabled in the updated App covered by this revision. Google and participating advertising partners may process advertising-related information separately from your locally stored receipt records, including:</p><ul><li>device and advertising identifiers, where permitted;</li><li>IP address;</li><li>general device information, operating-system version, language, and approximate location inferred from IP address;</li><li>advertisement impressions, interactions, clicks, crash diagnostics, and performance information;</li><li>consent and privacy choices; and</li><li>information used for fraud prevention, security, frequency capping, advertising measurement, and, where permitted, personalized advertising.</li></ul><p>The information processed depends on the SDK and advertising configuration, applicable privacy choices, and device permissions. We do not supply your receipt images, receipt contents, profile names, supplier tax IDs, or notes to Google as advertising targeting information.</p></section><section class="legal-section" id="p2"><h2>2. How information is used</h2><p>Information is processed to:</p><ul><li>scan receipts and recognize receipt text;</li><li>create and manage profiles and receipt records;</li><li>display, search, filter, edit, categorise, archive, delete, and export receipts;</li><li>calculate receipt-level estimates and currency-separated summaries, and suggest categories using previous receipts stored on your device;</li><li>maintain warranty records and schedule optional local reminders;</li><li>prepare and review selected records and create CSV, financial-summary PDF, or receipt-image PDF exports when requested;</li><li>provide and restore the Full Version;</li><li>remove advertising when the Full Version is active;</li><li>display and measure advertisements in the free version;</li><li>maintain security, prevent fraud, diagnose errors, and improve reliability; and</li><li>comply with legal obligations and enforce applicable terms.</li></ul><p>Receipt information is not used by Gallop &amp; Thrive to make financial, accounting, tax, credit, insurance, employment, or other automated eligibility decisions.</p></section><section class="legal-section" id="p3"><h2>3. On-device processing and storage</h2><p>Receipt text recognition is performed on the device using Apple Vision technologies. Based on the current version of the App, Gallop &amp; Thrive does not upload your receipt images or extracted receipt contents to a Gallop &amp; Thrive server for text recognition.</p><p>Profiles, receipt records, saved receipt images, thumbnails, categories, preferences, and cached Full Version status are stored locally using Apple storage technologies. Category suggestions use the existing receipts on your device; they do not require a remote AI service. The App does not currently provide its own cloud receipt database or account-based cloud synchronisation. Apple still verifies purchases and advertising services may communicate over the network as described in this policy. This locally stored information may also be included in device backups depending on your Apple device and backup settings.</p><p>If a future version introduces cloud synchronization, remote receipt processing, analytics, or another server-based feature, this Privacy Policy will be updated before or when that processing begins.</p></section><section class="legal-section" id="p4"><h2>4. Sharing and disclosure</h2><p>We do not sell your receipt images, extracted receipt contents, or profile information.</p><p>Information may be shared or processed in the following circumstances:</p><h3>User-directed sharing</h3><p>When you prepare an export, the App creates files locally from the records selected in the current profile. Exported information may include profile and company names, merchant and legal entity names, dates, monetary and tax information, categories, Business/Personal status, notes, receipt numbers, purchase locations, supplier tax identifiers, warranty dates, archive status, and record or profile identifiers. CSV exports also include the selection scope and export timestamp. The receipt PDF archive can contain original receipt images, including any personal details visible in those images.</p><p>When you save or share a file, the destination you select through Apple's sharing interface determines who receives or stores it. This can include a Files location, email recipient, accountant, third-party app, or cloud storage service. Review the selected records, images, and destination before sharing. The recipient's privacy practices apply. Preparing an export does not automatically send it to us or an accountant.</p><p>Archiving a receipt hides it from the active list but does not delete its record or images. Optional archiving after sharing is a separate action; copies already saved or shared are not recalled by archiving or deleting the original.</p><h3>Google advertising services</h3><p>Google Mobile Ads and participating advertising partners may process advertising, device, consent, diagnostic, and interaction information as described above. Google's handling of advertising information is described in its own policies, including:</p><ul><li>Google Privacy Policy: https://policies.google.com/privacy</li><li>How Google uses information from sites or apps that use its services: https://policies.google.com/technologies/partner-sites</li></ul><h3>Apple services</h3><p>Apple processes App Store purchases, restores, TestFlight distribution, operating-system permissions, and related information under Apple’s privacy policies:</p><ul><li>Apple Privacy Policy: https://www.apple.com/legal/privacy/</li></ul><h3>Information you send to support</h3><p>If you email us, we receive your email address, message, and any attachments you choose to include. Send receipt images or other personal information only if needed for your request. We use support correspondence to respond, troubleshoot, and handle privacy requests, and retain it only as reasonably needed for those purposes and applicable legal obligations.</p><h3>Legal and safety reasons</h3><p>For information that we actually hold, such as support correspondence, we may disclose information if reasonably necessary to comply with law, legal process, or a valid governmental request; protect the rights, safety, and security of users or others; investigate fraud or abuse; or establish, exercise, or defend legal claims.</p><h3>Business changes</h3><p>If Gallop &amp; Thrive is involved in a merger, acquisition, financing, reorganization, or sale of assets, information associated with the App may be transferred subject to appropriate confidentiality and privacy protections.</p></section><section class="legal-section" id="p5"><h2>5. Advertising choices, consent, and tracking</h2><p>Google's User Messaging Platform manages available advertising consent and privacy messages where required. Ad requests are gated on the consent SDK permitting them. Permission to display an ad is not, by itself, permission for cross-app tracking.</p><p>The updated App does not initiate an App Tracking Transparency (ATT) permission prompt. Any existing system tracking permission remains controlled by iOS or iPadOS. Advertising consent does not override an ATT refusal or restriction; access to Apple's advertising identifier requires the relevant system permission. Advertisements may still be available without that permission. Disabling ATT does not mean all advertising-related network processing stops.</p><p>You can review or change Apple tracking permission at:</p><p><strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong></p><p>Where the App displays a “Privacy and cookie settings” option, you may use it to review available advertising privacy choices. You may also control certain personalized-ad settings through your Apple device or Google account, where available.</p><p>When the Full Version entitlement is recognised, the App disables its advertisements. This does not erase information previously processed by advertising providers.</p></section><section class="legal-section" id="p6"><h2>6. Data retention and deletion</h2><p>Local profile and receipt information remains on your device until you delete individual receipts, delete a profile, or remove the App. Deleting a profile is intended to delete its associated receipt records and locally stored receipt images. Removing the App generally removes its locally stored data, subject to Apple backup and restoration behavior.</p><p>Temporary files created for CSV or PDF sharing may remain in the App's temporary storage until cleaned up by the operating system or removed with the App. Deleting a receipt does not necessarily remove an export already created from it. Files saved to Files, email, cloud storage, or receiving apps remain subject to those destinations' retention and deletion controls.</p><p>Archiving is not deletion. To remove a saved or shared copy, delete it separately from its destination. Turning off a profile's warranty reminders removes its pending reminders when the App refreshes scheduling; already delivered notifications may need to be cleared through the system interface.</p><p>Advertising and purchase providers retain information according to their own policies and legal obligations.</p><p>Because Gallop &amp; Thrive does not currently maintain user accounts or a server-side copy of your receipt database, we cannot remotely retrieve, restore, or delete information stored only on your device. Device backups and previously shared copies may retain information after its removal from the App. CSV and PDF files are useful records, but are not a complete backup that can restore the App's database.</p></section><section class="legal-section" id="p7"><h2>7. Security</h2><p>We use the protections provided by iOS and iPadOS and take reasonable measures designed to protect information handled by the App. However, no device, storage system, or method of electronic processing is completely secure. You are responsible for maintaining control of your device, passcode, backups, exported files, and destinations to which you share information.</p></section><section class="legal-section" id="p8"><h2>8. Children’s privacy</h2><p>The App is intended as a general receipt-organization and expense-tracking tool and is not directed to children. We do not knowingly request that children provide personal information to Gallop &amp; Thrive through an account or server operated by us. If you believe a child has provided personal information to us directly, please contact us so that we can investigate and take appropriate action.</p></section><section class="legal-section" id="p9"><h2>9. International processing</h2><p>Google, Apple, and their service providers may process information in countries other than the country where you live. Those countries may have different data-protection laws. Their respective privacy policies describe the safeguards they apply to international processing.</p></section><section class="legal-section" id="p10"><h2>10. Your rights and choices</h2><p>Depending on where you live, you may have rights regarding personal information, including rights to request access, correction, deletion, restriction, objection, or portability, and to withdraw consent where processing relies on consent.</p><p>For receipt and profile information stored only on your device, you can exercise control directly in the App by editing or deleting records and profiles, or by deleting the App. For information processed by Apple or Google, use the privacy controls and request mechanisms provided by those companies.</p><p>You may contact us about a privacy request using the details below. We may need to verify your request and may be unable to retrieve information that is stored only on your device.</p></section><section class="legal-section" id="p11"><h2>11. Changes to this Privacy Policy</h2><p>We may update this Privacy Policy when the App, our practices, third-party services, or legal requirements change. We will update the “Last updated” date and, where appropriate, provide additional notice. Where a change requires consent, we will seek that consent before the relevant processing. A policy update alone does not grant an operating-system permission.</p></section><section class="legal-section" id="p12"><h2>12. Contact us</h2><p>For privacy questions or requests, contact:</p><p><strong>App operator:</strong> Gallop &amp; Thrive Limited<br/>
+<strong>Trading name:</strong> Gallop &amp; Thrive<br/>
+<strong>Country:</strong> New Zealand<br/>
+<strong>Email:</strong> <a href="mailto:gallopnthrive@gmail.com">gallopnthrive@gmail.com</a><br/>
+<strong>Postal address:</strong> PO Box 28190, Remuera, Auckland 1541<br/>
+<strong>Website:</strong> <a href="https://gallopnthrive-web.github.io">gallopnthrive-web.github.io</a></p></section></article>
+</div>
 </main>
+<!-- Footer -->
+<footer class="site-footer design-136">
+<div class="design-085">
+<div class="design-086">
+<span class="design-087">Handheld Accountant</span>
+<span class="design-088">Your Receipts. Your Records. Your Control.</span>
+</div>
+<nav aria-label="Footer" class="design-086">
+<span class="design-089">PRODUCT</span>
+<a class="design-090" href="/#features">Features</a>
+<a class="design-090" href="/#workflow">How it works</a>
+<a class="design-090" href="https://apps.apple.com/app/id6785436951">App Store</a>
+</nav>
+<nav aria-label="Help and legal" class="design-086">
+<span class="design-089">HELP &amp; LEGAL</span>
+<a class="design-090" href="/Handheld-Accountants/support.html">Support</a>
+<a class="design-090" href="/Handheld-Accountants/">Privacy Policy</a>
+<a class="design-090" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+<a class="design-090" href="mailto:gallopnthrive@gmail.com">Contact</a>
+</nav>
+</div>
+<div class="design-091">© 2026 Gallop &amp; Thrive Limited</div>
+</footer>
+</div>
+
+
 </body>
 </html>

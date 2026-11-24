@@ -1,228 +1,126 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<meta name="description" content="Support information for the updated Handheld Accountant app on iPhone and iPad.">
-<title>Support | Handheld Accountant</title>
-<style>
-    :root {
-      --background: #f7f8fa;
-      --surface: #ffffff;
-      --text: #172033;
-      --muted: #5d6678;
-      --accent: #d96b13;
-      --accent-soft: #fff2e7;
-      --border: #e3e6eb;
-      --link: #075db7;
-      --shadow: 0 16px 45px rgba(24, 32, 51, 0.08);
-    }
+<meta charset="utf-8"/>
+<title>Handheld Accountant — Support</title>
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --background: #101318;
-        --surface: #181c23;
-        --text: #f1f4f8;
-        --muted: #b5bdca;
-        --accent: #ff9a45;
-        --accent-soft: #352417;
-        --border: #303641;
-        --link: #79b8ff;
-        --shadow: none;
-      }
-    }
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Help with scanning receipts, exports and restoring Full Version purchases in Handheld Accountant." name="description"/><meta content="#186C4A" name="theme-color"/><meta content="website" property="og:type"/><meta content="Handheld Accountant — Support" property="og:title"/><meta content="Help with scanning receipts, exports and restoring Full Version purchases in Handheld Accountant." property="og:description"/><meta content="https://gallopnthrive-web.github.io/Handheld-Accountants/support.html" property="og:url"/><meta content="https://gallopnthrive-web.github.io/assets/og-image.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="summary_large_image" name="twitter:card"/><link href="/css/site.css" rel="stylesheet"/><link href="/assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/assets/apple-touch-icon.png" rel="apple-touch-icon"/><link href="https://gallopnthrive-web.github.io/Handheld-Accountants/support.html" rel="canonical"/></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
 
-    * { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 17px;
-      line-height: 1.65;
-    }
-
-    main {
-      width: min(880px, calc(100% - 32px));
-      margin: 40px auto;
-      padding: clamp(28px, 6vw, 64px);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    header {
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .eyebrow {
-      margin: 0 0 8px;
-      color: var(--accent);
-      font-size: 0.82rem;
-      font-weight: 750;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.2rem, 7vw, 3.7rem);
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-    }
-
-    h2 { margin: 42px 0 12px; font-size: 1.55rem; }
-    h3 { margin: 0 0 8px; font-size: 1.08rem; }
-    p { margin: 8px 0 0; }
-
-    .intro {
-      max-width: 660px;
-      margin-top: 16px;
-      color: var(--muted);
-      font-size: 1.08rem;
-    }
-
-    .contact {
-      margin-top: 28px;
-      padding: 22px;
-      background: var(--accent-soft);
-      border-left: 4px solid var(--accent);
-      border-radius: 14px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 14px;
-      padding: 11px 17px;
-      color: #fff;
-      background: var(--accent);
-      border-radius: 10px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .questions {
-      display: grid;
-      gap: 14px;
-    }
-
-    article {
-      padding: 20px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-    }
-
-    a { color: var(--link); }
-
-    footer {
-      margin-top: 42px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 640px) {
-      main { margin: 16px auto; border-radius: 18px; }
-    }
-  </style>
-</head>
-<body>
-<main>
-<header>
-<p class="eyebrow">Gallop &amp; Thrive</p>
-<h1>Handheld Accountant Support</h1>
-<p><strong>Handheld Accountant 2.0 support.</strong> Version 2.0 is planned for 25 November 2026. These instructions describe 2.0; some screens and features differ in earlier versions.</p>
-<p><strong>Last updated:</strong> 24 November 2026</p>
-<p class="intro">Help with scanning, reviewing, organising, warranty records and exporting receipts on iPhone and iPad.</p>
-<div class="contact">
-<h2>Contact support</h2>
-<p>Email gallopnthrive@gmail.com with the app version and build number, iPhone or iPad model, system version and language, what you expected, what happened, and steps to reproduce the issue. A screenshot with sensitive details hidden can help.</p>
-<a class="button" href="mailto:gallopnthrive@gmail.com?subject=Handheld%20Accountant%20Support">Email gallopnthrive@gmail.com</a>
-<p>Do not send passwords, payment-card details, or unredacted receipt images unless they are necessary for the support request. Mask names, addresses, tax identifiers and other sensitive information where possible.</p>
+<div class="design-001">
+<!-- Header -->
+<header class="site-header design-004">
+<div class="design-005">
+<a class="design-006" href="/">
+<span class="design-007"><img alt="" class="design-008" src="/assets/accountant-character-96.png"/></span>
+<span class="design-009"><span class="design-010">Handheld Accountant</span><span class="design-011">by Gallop &amp; Thrive</span></span>
+</a>
+<nav aria-label="Main" class="design-012">
+<a class="nav-link design-013" href="/#features">Features</a>
+<a class="nav-link design-013" href="/#workflow">How it works</a>
+<a aria-current="page" class="nav-link design-092" href="/Handheld-Accountants/support.html">Support</a>
+<a class="nav-link design-013" href="/Handheld-Accountants/">Privacy</a>
+<a class="nav-link design-014" href="https://apps.apple.com/app/id6785436951">Get the app</a>
+</nav>
 </div>
 </header>
-<section aria-labelledby="faq-heading">
-<h2 id="faq-heading">Frequently asked questions</h2>
-<div class="questions">
-<article>
-<h3>How do I create or switch profiles?</h3>
-<p>Use the people button at the top left of the workspace to return to Select Profile. Select an existing profile or tap plus to add one. New profile names can contain up to 40 characters. Each profile has its own company, currency and tax settings. The app reopens Home for the last selected profile.</p>
-</article>
-<article>
-<h3>Where do I find the main tools?</h3>
-<p>Home provides an overview. Receipts lets you search and manage records; Scan adds receipts from the camera or Photos; Finance contains Export Receipts and Spending Summary; More contains profile tools, categories and warranty records. You can also open Settings and the in-app Help for instructions.</p>
-</article>
-<article>
-<h3>How do I scan and check a receipt?</h3>
-<p>Choose Scan, then Scan with Camera or Choose from Photos. Camera scanning requires a supported physical iPhone or iPad. Review the trading name, legal entity if applicable, date, amount, currency, payment method and other extracted details before saving. Recognition can make mistakes or leave fields for you to enter.</p>
-</article>
-<article>
-<h3>Why is some detected information incorrect?</h3>
-<p>Blur, shadows, folds, faded text, unusual layouts and receipt language can affect recognition. Keep the full receipt visible on a flat, contrasting surface with good lighting. Correct the details before saving. For a saved record, swipe left on the receipt and choose Edit. The app may recognise a registered company name rather than the shop's trading name; check both fields against the receipt.</p>
-</article>
-<article>
-<h3>Why can I not save an amount?</h3>
-<p>An empty or invalid amount cannot be saved. Use your device region's decimal separator, and remove letters or unrelated symbols. The amount keyboard has a plus/minus control for negative refunds and a Done button to close it. If an external keyboard or pasted text produces unexpected characters, enter a valid amount before saving.</p>
-</article>
-<article>
-<h3>How are tax amounts calculated?</h3>
-<p>The app estimates tax from a tax-inclusive total using the single rate configured for the record. It does not choose a tax rate from the currency. Monetary values are rounded to each currency's decimal precision per receipt before being added to export totals; net equals rounded total minus rounded tax. Mixed rates, exemptions and local calculation rules can differ, so check against the original receipt. The app prepares records; it does not file tax returns or certify accounting compliance.</p>
-</article>
-<article>
-<h3>How are different currencies handled?</h3>
-<p>Receipts keep their recorded currencies. Finance summaries and export review show currency-separated totals instead of converting or combining different currencies. Check the currency when reviewing a scanned receipt; a profile preference is not confirmation of the currency printed on the receipt.</p>
-</article>
-<article>
-<h3>How do I find and organise receipts?</h3>
-<p>In Receipts, search by trading name, legal entity, notes or receipt number. Use the calendar and filters for dates, categories and Business/Personal expenses. Assign categories while reviewing or editing a receipt. Existing receipts remain Uncategorised until assigned. Spending Summary, custom category management and suggestions based on previous receipts require Full Version; basic built-in categories remain available without it.</p>
-</article>
-<article>
-<h3>How do I track warranty dates?</h3>
-<p>While reviewing or editing a receipt, enable Track Warranty Expiry and set the expiry date. Open Warranty Records from Home or More to search and filter by warranty status. Archived receipts remain included. The dates are your records, not confirmation that the seller or manufacturer accepts a warranty claim.</p>
-</article>
-<article>
-<h3>How do warranty reminders work?</h3>
-<p>Reminders are off by default for each profile. Open Warranty Records, then Warranty Reminders, enable notifications and choose 7, 14 or 30 days before expiry. Reminders are scheduled locally for 9 AM; past reminder times are not sent again. Open the app regularly to refresh the limited reminder queue. If permission is denied, check notification settings on your iPhone or iPad. Records still work without notifications. Notification previews may show profile and merchant names; control preview visibility in system Settings.</p>
-</article>
-<article>
-<h3>How do I export receipts?</h3>
-<p>Choose Export Receipts in Finance or in the Receipts menu. In Prepare Export, select record status, dates, category, Business/Personal, currency and other filters, then select Review Export. The Receipts menu starts with the currently filtered list. Review the records, warnings and currency-separated totals, then choose Export CSV, Financial Summary PDF or Receipt PDF Archive with images. Preparation and review do not require Full Version; creating files does.</p>
-</article>
-<article>
-<h3>Does exporting archive or delete my receipts?</h3>
-<p>CSV and financial summary PDF exports do not archive receipts. After a receipt PDF is successfully shared or saved, a separate confirmation lets you choose whether to archive the exported active records. Cancelling sharing or declining archiving leaves them unchanged. Archiving hides records from the active list; it does not delete them or end their warranty tracking. Deletion is a separate, permanent action.</p>
-</article>
-<article>
-<h3>Why does CSV use English headers, or show an apostrophe?</h3>
-<p>CSV uses fixed English column headers, YYYY-MM-DD dates, decimal points and UTF-8 encoding for consistent import. Text that could be interpreted as a spreadsheet formula is protected with an initial apostrophe; numeric refunds stay negative numbers. When importing, set receipt-number and tax-ID columns to text if necessary to preserve leading zeros, and check the receiving software's field mapping.</p>
-</article>
-<article>
-<h3>How do I restore Full Version?</h3>
-<p>Open More, choose Upgrade to Full Version, then Restore Purchases while signed in to the Apple Account used for the original purchase. Check your internet connection if the entitlement is not recognised. If it still fails, contact support with the app version and error message. Do not send your Apple Account password or payment-card details.</p>
-</article>
-<article>
-<h3>Where is my data stored, and are exports a backup?</h3>
-<p>Receipt recognition uses Apple's on-device technology. Profiles, receipt records and saved images are stored locally; no app account or sign-in is required. The app does not provide its own cloud receipt synchronisation. Deleting a receipt or profile permanently removes associated records and images. CSV and PDF preserve exported information but cannot fully restore the app's database. Keep an appropriate device backup, especially before installing a beta. Files you save or share elsewhere must be managed separately; support cannot remotely recover receipts stored only on your device.</p>
-</article>
-<article>
-<h3>Why do I see ads, or no ads?</h3>
-<p>The free version can display banner ads. Their availability depends on consent choices, the connection and ad availability. App-open ads are disabled in this updated version. When Full Version is recognised, the app disables its advertisements. If available, Privacy and cookie settings in Settings lets you review advertising privacy choices.</p>
-</article>
+<main id="main">
+<!-- Page hero -->
+<section class="design-093">
+<div aria-hidden="true" class="design-094"></div>
+<div class="design-095">
+<div class="design-096">
+<p class="section-label design-020">Support</p>
+<h1 class="design-097">How can we help?</h1>
+<p class="design-098">Help with scanning, reviewing, organising, warranty records and exporting receipts on iPhone and iPad.</p>
+<div class="design-123"><span class="design-124">Handheld Accountant 2.0</span><span class="design-125">Last updated 24 November 2026</span></div>
+<p class="design-104">Version 2.0 is planned for 25 November 2026. These instructions describe 2.0; some screens and features differ in earlier versions.</p>
+</div>
+<img alt="" class="design-099" src="/assets/accountant-character-500.png"/>
 </div>
 </section>
-<section aria-labelledby="contacting-heading">
-<h2 id="contacting-heading">Before contacting us</h2>
-<p>Try closing and reopening the app. Check camera permission if scanning is unavailable, notification permission for warranty reminders, and the internet connection for purchase restoration or sharing services. Use the system photo picker to select an image; importing a selected photo does not require unrestricted access to the entire photo library. Do not delete and reinstall the app as a troubleshooting step without a recoverable backup: local receipt data may be lost.</p>
+<!-- Topic shortcuts -->
+<section aria-label="Help topics" class="design-100">
+<div class="design-101">
+<a class="design-102" href="#faq-scan"><svg aria-hidden="true" fill="none" height="24" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path></svg><span class="design-103">Scanning tips</span><span class="design-104">Capture, import and OCR accuracy</span></a>
+<a class="design-102" href="#faq-export"><svg aria-hidden="true" fill="none" height="24" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"></path><path d="m16 6-4-4-4 4"></path><path d="M12 2v13"></path></svg><span class="design-103">Export help</span><span class="design-104">CSV records and PDF archives</span></a>
+<a class="design-102" href="#faq-warranty"><svg aria-hidden="true" fill="none" height="24" stroke="#B45309" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"><rect height="17" rx="2" width="18" x="3" y="4"></rect><path d="M3 9h18M8 2v4M16 2v4"></path></svg><span class="design-103">Warranty help</span><span class="design-104">Expiry dates and reminders</span></a>
+<a class="design-102" href="#faq-restore"><svg aria-hidden="true" fill="none" height="24" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5"></path></svg><span class="design-103">Restore purchases</span><span class="design-104">Get your Full Version back</span></a>
+</div>
 </section>
-<footer>
-<p><a href="https://gallopnthrive-web.github.io/Handheld-Accountants/">Privacy Policy</a></p>
-<p>Handheld Accountant is operated and supported by Gallop &amp; Thrive Limited.</p>
-</footer>
+<!-- FAQ + contact -->
+<section class="design-105">
+<div class="design-106" id="faq">
+<h2 class="design-107">Frequently asked questions</h2>
+<div class="design-108">
+<details class="faq-item" open><summary>How do I create or switch profiles?</summary><p>Use the people button at the top left of the workspace to return to Select Profile. Select an existing profile or tap plus to add one. New profile names can contain up to 40 characters. Each profile has its own company, currency and tax settings. The app reopens Home for the last selected profile.</p></details>
+<details class="faq-item"><summary>Where do I find the main tools?</summary><p>Home provides an overview. Receipts lets you search and manage records; Scan adds receipts from the camera or Photos; Finance contains Export Receipts and Spending Summary; More contains profile tools, categories and warranty records. You can also open Settings and the in-app Help for instructions.</p></details>
+<details class="faq-item" id="faq-scan"><summary>How do I scan and check a receipt?</summary><p>Choose Scan, then Scan with Camera or Choose from Photos. Camera scanning requires a supported physical iPhone or iPad. Review the trading name, legal entity if applicable, date, amount, currency, payment method and other extracted details before saving. Recognition can make mistakes or leave fields for you to enter.</p></details>
+<details class="faq-item"><summary>Why is some detected information incorrect?</summary><p>Blur, shadows, folds, faded text, unusual layouts and receipt language can affect recognition. Keep the full receipt visible on a flat, contrasting surface with good lighting. Correct the details before saving. For a saved record, swipe left on the receipt and choose Edit. The app may recognise a registered company name rather than the shop's trading name; check both fields against the receipt.</p></details>
+<details class="faq-item"><summary>Why can I not save an amount?</summary><p>An empty or invalid amount cannot be saved. Use your device region's decimal separator, and remove letters or unrelated symbols. The amount keyboard has a plus/minus control for negative refunds and a Done button to close it. If an external keyboard or pasted text produces unexpected characters, enter a valid amount before saving.</p></details>
+<details class="faq-item"><summary>How are tax amounts calculated?</summary><p>The app estimates tax from a tax-inclusive total using the single rate configured for the record. It does not choose a tax rate from the currency. Monetary values are rounded to each currency's decimal precision per receipt before being added to export totals; net equals rounded total minus rounded tax. Mixed rates, exemptions and local calculation rules can differ, so check against the original receipt. The app prepares records; it does not file tax returns or certify accounting compliance.</p></details>
+<details class="faq-item"><summary>How are different currencies handled?</summary><p>Receipts keep their recorded currencies. Finance summaries and export review show currency-separated totals instead of converting or combining different currencies. Check the currency when reviewing a scanned receipt; a profile preference is not confirmation of the currency printed on the receipt.</p></details>
+<details class="faq-item"><summary>How do I find and organise receipts?</summary><p>In Receipts, search by trading name, legal entity, notes or receipt number. Use the calendar and filters for dates, categories and Business/Personal expenses. Assign categories while reviewing or editing a receipt. Existing receipts remain Uncategorised until assigned. Spending Summary, custom category management and suggestions based on previous receipts require Full Version; basic built-in categories remain available without it.</p></details>
+<details class="faq-item" id="faq-warranty"><summary>How do I track warranty dates?</summary><p>While reviewing or editing a receipt, enable Track Warranty Expiry and set the expiry date. Open Warranty Records from Home or More to search and filter by warranty status. Archived receipts remain included. The dates are your records, not confirmation that the seller or manufacturer accepts a warranty claim.</p></details>
+<details class="faq-item"><summary>How do warranty reminders work?</summary><p>Reminders are off by default for each profile. Open Warranty Records, then Warranty Reminders, enable notifications and choose 7, 14 or 30 days before expiry. Reminders are scheduled locally for 9 AM; past reminder times are not sent again. Open the app regularly to refresh the limited reminder queue. If permission is denied, check notification settings on your iPhone or iPad. Records still work without notifications. Notification previews may show profile and merchant names; control preview visibility in system Settings.</p></details>
+<details class="faq-item" id="faq-export"><summary>How do I export receipts?</summary><p>Choose Export Receipts in Finance or in the Receipts menu. In Prepare Export, select record status, dates, category, Business/Personal, currency and other filters, then select Review Export. The Receipts menu starts with the currently filtered list. Review the records, warnings and currency-separated totals, then choose Export CSV, Financial Summary PDF or Receipt PDF Archive with images. Preparation and review do not require Full Version; creating files does.</p></details>
+<details class="faq-item"><summary>Does exporting archive or delete my receipts?</summary><p>CSV and financial summary PDF exports do not archive receipts. After a receipt PDF is successfully shared or saved, a separate confirmation lets you choose whether to archive the exported active records. Cancelling sharing or declining archiving leaves them unchanged. Archiving hides records from the active list; it does not delete them or end their warranty tracking. Deletion is a separate, permanent action.</p></details>
+<details class="faq-item"><summary>Why does CSV use English headers, or show an apostrophe?</summary><p>CSV uses fixed English column headers, YYYY-MM-DD dates, decimal points and UTF-8 encoding for consistent import. Text that could be interpreted as a spreadsheet formula is protected with an initial apostrophe; numeric refunds stay negative numbers. When importing, set receipt-number and tax-ID columns to text if necessary to preserve leading zeros, and check the receiving software's field mapping.</p></details>
+<details class="faq-item" id="faq-restore"><summary>How do I restore Full Version?</summary><p>Open More, choose Upgrade to Full Version, then Restore Purchases while signed in to the Apple Account used for the original purchase. Check your internet connection if the entitlement is not recognised. If it still fails, contact support with the app version and error message. Do not send your Apple Account password or payment-card details.</p></details>
+<details class="faq-item"><summary>Where is my data stored, and are exports a backup?</summary><p>Receipt recognition uses Apple's on-device technology. Profiles, receipt records and saved images are stored locally; no app account or sign-in is required. The app does not provide its own cloud receipt synchronisation. Deleting a receipt or profile permanently removes associated records and images. CSV and PDF preserve exported information but cannot fully restore the app's database. Keep an appropriate device backup, especially before installing a beta. Files you save or share elsewhere must be managed separately; support cannot remotely recover receipts stored only on your device.</p></details>
+<details class="faq-item"><summary>Why do I see ads, or no ads?</summary><p>The free version can display banner ads. Their availability depends on consent choices, the connection and ad availability. App-open ads are disabled in this updated version. When Full Version is recognised, the app disables its advertisements. If available, Privacy and cookie settings in Settings lets you review advertising privacy choices.</p></details>
+</div>
+</div>
+<aside class="design-109">
+<div class="design-110">
+<h2 class="design-111">Contact support</h2>
+<p class="design-064">Email us with the app version and build number, your iPhone or iPad model, system version and language, what you expected, what happened, and the steps to reproduce the issue. A screenshot with sensitive details hidden can help.</p>
+<p class="design-064">Do not send passwords, payment-card details, or unredacted receipt images unless they are necessary for the support request. Mask names, addresses, tax identifiers and other sensitive information where possible.</p>
+<a class="design-112" href="mailto:gallopnthrive@gmail.com?subject=Handheld%20Accountant%20Support">
+<svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></svg>
+gallopnthrive@gmail.com</a>
+</div>
+<div class="design-043">
+<h2 class="design-113">Before contacting us</h2>
+<ul class="design-114">
+<li class="design-115"><svg aria-hidden="true" class="design-027" fill="none" height="20" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="20"><path d="m5 12 5 5 9-10"></path></svg><span>Close and reopen the app.</span></li>
+<li class="design-115"><svg aria-hidden="true" class="design-027" fill="none" height="20" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="20"><path d="m5 12 5 5 9-10"></path></svg><span>Check camera permission if scanning is unavailable.</span></li>
+<li class="design-115"><svg aria-hidden="true" class="design-027" fill="none" height="20" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="20"><path d="m5 12 5 5 9-10"></path></svg><span>Check notification permission for warranty reminders.</span></li>
+<li class="design-115"><svg aria-hidden="true" class="design-027" fill="none" height="20" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="20"><path d="m5 12 5 5 9-10"></path></svg><span>Check the internet connection for purchase restoration or sharing services.</span></li>
+<li class="design-115"><svg aria-hidden="true" class="design-027" fill="none" height="20" stroke="#186C4A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="20"><path d="m5 12 5 5 9-10"></path></svg><span>Use the system photo picker to select an image; importing a selected photo does not require unrestricted access to your whole photo library.</span></li>
+</ul>
+<p class="design-116">Do not delete and reinstall the app as a troubleshooting step without a recoverable backup: local receipt data may be lost.</p>
+</div>
+</aside>
+</section>
 </main>
+<!-- Footer -->
+<footer class="site-footer design-084">
+<div class="design-085">
+<div class="design-086">
+<span class="design-087">Handheld Accountant</span>
+<span class="design-088">Your Receipts. Your Records. Your Control.</span>
+</div>
+<nav aria-label="Footer" class="design-086">
+<span class="design-089">PRODUCT</span>
+<a class="design-090" href="/#features">Features</a>
+<a class="design-090" href="/#workflow">How it works</a>
+<a class="design-090" href="https://apps.apple.com/app/id6785436951">App Store</a>
+</nav>
+<nav aria-label="Help and legal" class="design-086">
+<span class="design-089">HELP &amp; LEGAL</span>
+<a class="design-090" href="/Handheld-Accountants/support.html">Support</a>
+<a class="design-090" href="/Handheld-Accountants/">Privacy Policy</a>
+<a class="design-090" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+<a class="design-090" href="mailto:gallopnthrive@gmail.com">Contact</a>
+</nav>
+</div>
+<div class="design-091">© 2026 Gallop &amp; Thrive Limited · Handheld Accountant is operated and supported by Gallop &amp; Thrive Limited.</div>
+</footer>
+</div>
+
+
 </body>
 </html>
